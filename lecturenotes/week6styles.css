@@ -1,0 +1,11 @@
+body {
+    background-color: bisque;
+}
+
+p {color: darkred;}
+
+.boldred {color: red;
+        font-weight: bold;}
+
+/* no html alloed here only CSS code 
+    waste space doesnt matter */

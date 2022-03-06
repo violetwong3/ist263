@@ -1,0 +1,13 @@
+body {background-color: rgb(225, 232, 238);}
+h1 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold; 
+    font-size: 2.2em;
+    color: darkslateblue; }
+h2 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold; 
+        font-size: 1.5em;
+        color: darkslateblue; }
+p, dd, dt {color: rgb(19, 8, 95);
+    font-family: 'Times New Roman', Times, serif; }
+    
+.evenrow {background-color: rgb(203, 207, 212);}
