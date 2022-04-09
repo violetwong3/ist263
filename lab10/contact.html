@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+    <style>
+        h1, h2, h3, a, form {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+        h1 {font-size: 2.2em }
+        h2{font-size: 1em;}
+        h3, a {font-size: 0.8em;}
+        form {font-size: 0.85em;}
+        body {background-color: darkgrey;
+            font-size: 1.3em;}
+        .amazonlink {color:darkmagenta;} 
+        .row1, .row2 {display: flex; flex: 2; order: 3; background-color: #cde6e0; border-radius: 1em; margin: 20px;}
+        .address { flex: 1;
+               padding: 30px; }
+        .links, .form { flex: 1;
+               padding: 60px; }
+        .map { flex: 1;
+            padding: 35px;}
+        .row2{flex-wrap: wrap;}    
+        </style>
+        <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body> 
+    <nav> 
+        <a href=index.html  >Home</a> <span>|</span>
+        <a href=skills.html>Skills</a> <span>|</span>
+        <a href=contact.html>Contact</a>
+    </nav>
+
+    <h1>Contact</h1>
+   
+<div class="row1">
+        <div class="address"> 
+        <h2>Address</h2>
+        <h3>Violet Wong <br>
+            Syracuse University <br> 
+            Slocum Hall <br>
+            159 College Pl, Syracuse, NY 13210 </h3>
+
+    </div>
+    <div class="links">
+       
+        <a href="https://www.linkedin.com/in/violet-wong-748a37231" target="_blank">My Linkedlin Profile</a>
+        <br>
+        <a href="mailto:vwong04@syr.edu">vwong04@syr.edu</a>
+        <a href="https://www.linkedin.com/in/violet-wong-748a37231" target="_blank"><img src="../../ist263/images/logoo-sized.png" alt="Llogo"><br></a>
+    </div>
+</div>
+<div class="row2">
+    <div class="form">
+        <form action="https://formspree.io/f/mqknqboj" method="post">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br><br>
+               
+                <label for="need"> What are you looking for?<br>Additionally, please leave your contact information if you want to be contacted.</label><br>
+                <textarea name="need" id="need"></textarea><br>
+          <p>What contact methods work?</p>
+                <label for="methoda">phone</label>
+                <input type="checkbox" id="methoda" name="methoda">
+                <label for="methodb">email</label>
+                <input type="checkbox" id="methodb" name="methodb">
+                <label for="methodc">instagram</label>
+                <input type="checkbox" id="methodc" name="methodc"><br><br>
+                <label for="time"> What time do you want to be contacted?</label>
+                <select id="time" name="time"> 
+                    <option value="weekdays">weekdays</option>
+                    <option value="weekend">weekend</option>
+                    <option value="anytime">anytime</option>
+                </select><br><br>
+
+                <input type="submit" value="send">
+        </form>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.178662238728!2d-76.13400828452208!3d43.03767227914712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3758398938f%3A0xaa8b0898e9eb41cd!2sSlocum%20Hall!5e0!3m2!1sen!2sus!4v1644703645870!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+
+
+
+</body>
+
+</html>
