@@ -1,0 +1,52 @@
+.h1 { 
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+}
+.namenav {display: flex;}
+@media only screen and (max-width: 800px)
+{
+    nav a { display: block;
+            width: 100%;
+            padding:10px;}
+    span {  display: none;}
+} 
+
+.nav1 {
+    background-color: #000000;
+    color: #ffffff;
+    float:right;
+    border-radius: 15px;
+    padding: .8em;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    }
+
+.row1 {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    margin: 30px;
+}
+.one {
+    width:20%;
+    height: 20%;
+    display: center;
+    flex:2
+}
+.paragraph1 {
+    flex:1
+}
+.paragraph2 {
+    flex: 3
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    margin: px;
+}
+.two,.three {
+    width: 15%;
+    height: 15%;
+    flex:1
+}
