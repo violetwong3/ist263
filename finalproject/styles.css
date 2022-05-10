@@ -2,6 +2,12 @@
     font-weight: bold;
     font-family:'Times New Roman', Times, serif;
 }
+
+#text {
+font-family: 'Courier New', Courier, monospace;
+}
+
+
 .namenav {display: flex;}
 @media only screen and (max-width: 800px)
 {
@@ -26,12 +32,27 @@
     }
 .nav1 a:hover {background-color: #59555d;}    
 
-.row1 {
+
+/* flexbox */
+
+.row1, .row3 {
     display: flex;
-    font-family: 'Courier New', Courier, monospace;
+    justify-content: space-between;
     align-items: center;
     margin: 30px;
+    padding: 10px;
 }
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35px;
+}
+
+
+/* images */
+
 .one {
     width:20%;
     height: 20%;
@@ -39,19 +60,7 @@
     display: center;
     flex:2
 }
-.paragraph1 {
-    flex:1
-}
-.paragraph2 {
-    flex: 3
-}
-
-.row2 {
-    display: flex;
-    align-items: center;
-    margin: px;
-}
-.two {
+.two{
     width: 15%;
     height: 15%;
     flex:1
@@ -61,3 +70,31 @@
     height: 30%;
     flex:1
 }
+
+.four,.five,.six,.seven,.eight,.nine {
+    width: 40%;
+    height: 40%;
+    flex:1
+}
+
+
+.ten,.eleven,.twelve {
+    width: 55%;
+    height: 55%;
+    flex:1
+}
+
+/* text */
+
+.paragraph1 {
+    flex:1
+}
+.paragraph2 {
+    flex: 3
+}
+.text3 {
+    flex: 6;
+}
+
+
+/* contact */
