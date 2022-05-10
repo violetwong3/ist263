@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+
+    <script>
+        function Right () {
+            document.getElementById("rightanswer").innerHTML = "Good job. New York is correct."
+            body.style.backgroundColor = 'green';
+        }
+        function Wrong () {
+            document.getElementById("wronganswer").innerHTML = "False is not correct."
+        }
+    </script>
+</head>
+
+<body>
+    <p>Syracuse University is in New York State</p>
+    <p id="rightanswer" onclick="Right();">True</p>
+    <p id="wronganswer" onclick="Wrong();">False</p>
+
+</body>
+</html>
