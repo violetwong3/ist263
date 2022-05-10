@@ -56,8 +56,49 @@ font-weight: 200%;
     text-align: center;
 }
 
+.photorow {
+    display: flex;
+    
+}
+
+.row4,.row5,.row6 {
+    flex-direction: column;
+    margin: 35px;
+    padding: 10px;
+}
+
+.row7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 35px;
+}
 
 /* images */
+
+.photoone {
+    padding: 17px;
+    width: 55%;
+    height: 55%;
+    flex:1
+}
+.phototwo {
+    padding: 17px;
+    width: 45%;
+    height: 45%;
+    flex:1
+}
+.photothree {
+    padding: 17px;
+    width: 80%;
+    height: 80%;
+    flex:1
+}
+
+.photofour {
+    height: 50%;
+    width: 50%;
+}
 
 .one {
     width:20%;
@@ -116,10 +157,10 @@ font-weight: 200%;
 /* text */
 
 .paragraph1 {
-    flex:1
+    flex:5
 }
 .paragraph2 {
-    flex: 3
+    flex: 5
 }
 
 
