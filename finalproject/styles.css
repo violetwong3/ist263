@@ -5,6 +5,10 @@
 
 #text {
 font-family: 'Courier New', Courier, monospace;
+font-weight: 200%;
+}
+#title {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -41,13 +45,15 @@ font-family: 'Courier New', Courier, monospace;
     align-items: center;
     margin: 30px;
     padding: 10px;
+    text-align: center;
 }
 
 .row2, .row3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 35px;
+    margin: 25px;
+    text-align: center;
 }
 
 
@@ -60,28 +66,51 @@ font-family: 'Courier New', Courier, monospace;
     display: center;
     flex:2
 }
-.two{
+.two {
     width: 15%;
     height: 15%;
     flex:1
 }
-.three {
+.three,.fourteen {
     width: 30%;
     height: 30%;
     flex:1
 }
 
-.four,.five,.six,.seven,.eight,.nine {
+.fifteen {
+    width: 35%;
+    height: 35%;
+    flex:1
+}
+
+.four,.five,.six,.seven,.nine,.sixteen,.nineteen,.twenty  {
     width: 40%;
     height: 40%;
     flex:1
 }
 
+.eight,.seventeen {
+    width: 45%;
+    height: 45%;
+    flex:1
+}
 
-.ten,.eleven,.twelve {
+.ten,.twelve,.twentyone,.eleven {
     width: 55%;
     height: 55%;
     flex:1
+}
+
+.thirteen {
+    width: 75%;
+    height: 75%;
+    flex:1
+}
+
+.eighteen {
+    width: 155%;
+    height: 155%;
+    flex:1 
 }
 
 /* text */
@@ -91,9 +120,6 @@ font-family: 'Courier New', Courier, monospace;
 }
 .paragraph2 {
     flex: 3
-}
-.text3 {
-    flex: 6;
 }
 
 
