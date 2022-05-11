@@ -3,11 +3,11 @@
     font-family:'Times New Roman', Times, serif;
 }
 
-#text {
+.text {
 font-family: 'Courier New', Courier, monospace;
 font-weight: 200%;
 }
-#title,.form {
+.title,.form {
     font-family: 'Courier New', Courier, monospace;
 }
 
