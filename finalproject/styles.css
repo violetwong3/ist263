@@ -7,7 +7,7 @@
 font-family: 'Courier New', Courier, monospace;
 font-weight: 200%;
 }
-#title {
+#title,.form {
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -56,25 +56,91 @@ font-weight: 200%;
     text-align: center;
 }
 
-.photorow {
+.photorow,.digitalrow {
     display: flex;
-    
 }
 
-.row4,.row5,.row6 {
+.col4,.col5,.col6 {
     flex-direction: column;
     margin: 35px;
     padding: 10px;
 }
 
-.row7 {
+.row7,.row12 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 35px;
 }
 
+.contactrow {
+    display: flex;
+    padding: 20px;
+}
+
+
+
+
+.col8,.col9,.col10,.col11 {
+    flex-direction: column;
+    margin: 35px;
+    padding: 30px;
+}
+
+
+
 /* images */
+
+.digitalone {
+    padding: 15px;
+    width: 45%;
+    height: 45%;
+    flex: 1;
+}
+.digitaltwo {
+    padding: 15px;
+    width: 70%;
+    height: 70%;
+    flex: 1;
+}
+.digitalthree {
+    padding: 15px;
+    width: 65%;
+    height: 65%;
+    flex: 1;
+}
+.digitalfour {
+    padding: 15px;
+    width: 120%;
+    height: 120%;
+    flex: 1;
+}
+.digitalfive {
+    padding: 15px;
+    width: 45%;
+    height: 45%;
+    flex: 1;  
+    height: auto; 
+}
+.digitalsix {
+    margin: 15px;
+    width: 100%;
+    height: 100%;
+    flex: 2;
+    height: auto; 
+}
+.digitalseven {
+    padding: 15px;
+    width: 75%;
+    height: 75%;
+    flex: 1;
+}
+
+.contactone {
+    width: 55%;
+    height: auto;   
+}
+
 
 .photoone {
     padding: 17px;
@@ -96,16 +162,18 @@ font-weight: 200%;
 }
 
 .photofour {
-    height: 50%;
-    width: 50%;
+    height: 60%;
+    height: auto;
+    width: 60%;
+    justify-content: space-around;
 }
 
 .one {
-    width:20%;
-    height: 20%;
+    width:35%;
+    height: 35%;
     justify-content: center;
     display: center;
-    flex:2
+    flex:3
 }
 .two {
     width: 15%;
@@ -156,12 +224,10 @@ font-weight: 200%;
 
 /* text */
 
-.paragraph1 {
-    flex:5
+.paragraph1,.paragraph2 {
+    width:auto; 
 }
-.paragraph2 {
-    flex: 5
-}
+
 
 
 /* contact */
