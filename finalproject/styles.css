@@ -16,6 +16,19 @@ font-weight: 200%;
     padding: 20px;
 }
 
+#hamburger {
+    width:40px;
+    display: none;
+}
+#navlinks a {
+    padding: 10px;
+    margin: 5px;
+}
+@media only screen and (max-width:600px) {
+    #hamburger {display: block;}
+    #navlinks a {display: block;}
+    #navlinks {display: none;}
+}
 
 @media only screen and (max-width: 800px)
 {

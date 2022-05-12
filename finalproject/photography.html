@@ -6,29 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violet Wong</title>
     <link rel="stylesheet" href="styles.css"> 
-    <style>
-        #hamburgertwo {
-            width:40px;
-            display: none;
-        }
-        #navlinkstwo a {
-            padding: 10px;
-            margin: 5px;
-        }
-        @media only screen and (max-width:600px) {
-            #hamburgertwo {display: block;}
-            #navlinkstwo a {display: block;}
-            #navlinkstwo {display: none;}
-        }
-    </style>
+
     <script>
         function toggleNav () {
             /* check if the nav is on */
-            if (document.getElementById("navlinkstwo").style.getPropertyValue("display") == 'block') {
-                document.getElementById("navlinkstwo").style.display = "none";
+            if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                document.getElementById("navlinks").style.display = "none";
             }
             else {
-            document.getElementById("navlinkstwo").style.display = "block";
+            document.getElementById("navlinks").style.display = "block";
             }
         }
     </script>
@@ -39,8 +25,8 @@
         <div class="name"> <h1> 橪 · Photography </h1></div>
         <div>
             <nav class="nav1"> 
-                <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" id="hamburgertwo" onclick="toggleNav();">
-                <div id="navlinkstwo"> 
+                <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" id="hamburger" onclick="toggleNav();">
+                <div id="navlinks"> 
                 <a href="homepage.html" class="link" tabindex="5"> Home </a> <span>|</span> 
                 <a href="physicalart.html" class="link" tabindex="1"> Physical Art </a> <span>|</span>
                 <a href="photography.html" class="link" tabindex="2"> Photography </a> <span>|</span>
@@ -48,6 +34,7 @@
                 <a href="contact.html" class="link" tabindex="4"> Contact </a>
         </nav>
     </div>
+</div>
     </div>
 
 <section>    
