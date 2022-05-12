@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violet Wong</title>
     <link rel="stylesheet" href="styles.css"> 
+    <style>
+        #hamburger {
+            width:40px;
+            display: none;
+        }
+        #navlinks a {
+            padding: 10px;
+            margin: 5px;
+        }
+        @media only screen and (max-width:600px) {
+            #hamburger {display: block;}
+            #navlinks a {display: block;}
+            #navlinks {display: none;}
+        }
+    </style>
+    <script>
+        function toggleNav () {
+            /* check if the nav is on */
+            if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                document.getElementById("navlinks").style.display = "none";
+            }
+            else {
+            document.getElementById("navlinks").style.display = "block";
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -13,6 +39,8 @@
         <div class="name"> <h1> 橪 · VIOLET WONG  </h1></div>
         <div>
             <nav class="nav1"> 
+                <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" id="hamburger" onclick="toggleNav();">
+                <div id="navlinks"> 
                 <a href="homepage.html" class="link" tabindex="5"> Home </a> <span>|</span> 
                 <a href="physicalart.html" class="link" tabindex="1"> Physical Art </a> <span>|</span>
                 <a href="photography.html" class="link" tabindex="2"> Photography </a> <span>|</span>
@@ -25,16 +53,16 @@
     
 <main> 
     <div class="row1">
-        <div class="paragraph1" id="text">Doing art is like reconnecting with an old friend—not only the finished product but the ambiance of the smell of pencils and the sound of sharpening them with a knife and the choosing and blending of colors and materials. The process of turning lines and colors into something beautiful felt magical.</div>
-        <div><img class="one" src="projectimages/zp_10(2).jpg" alt="zp102"></div>
-        <div class="paragraph2" id="text">When I see something striking -- a person, a face,  a flower, a nature scene -- I just want to capture it.</div>
+        <div class="paragraph1" id="text" style="font-family: 'Courier New', Courier, monospace;">Doing art is like reconnecting with an old friend—not only the finished product but the ambiance of the smell of pencils and the sound of sharpening them with a knife and the choosing and blending of colors and materials. The process of turning lines and colors into something beautiful felt magical.</div>
+        <div><img class="one" src="projectimages/zp_10(2).jpg" alt="Violet in studio"></div>
+        <div class="paragraph2" id="text" style="font-family: 'Courier New', Courier, monospace;">When I see something striking -- a person, a face,  a flower, a nature scene -- I just want to capture it.</div>
     </div>
 </main>
 
 <aside> 
     <div class="row2">
-        <div><img class="two" src="projectimages/chalk3_2.JPG" alt="chalk3_2"></div>
-        <div><img class="three" src="projectimages/digital(1).JPG" alt="digital1"></div>
+        <div><img class="two" src="projectimages/chalk3_2.JPG" alt="self portrait chalk drawing"></div>
+        <div><img class="three" src="projectimages/digital(1).JPG" alt="self portrait ProCreate"></div>
         <div></div>
     </div>
 </aside>

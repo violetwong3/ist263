@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violet Wong</title>
     <link rel="stylesheet" href="styles.css"> 
+    <style>
+        #hamburger {
+            width:40px;
+            display: none;
+        }
+        #navlinks a {
+            padding: 10px;
+            margin: 5px;
+        }
+        @media only screen and (max-width:600px) {
+            #hamburger {display: block;}
+            #navlinks a {display: block;}
+            #navlinks {display: none;}
+        }
+    </style>
+    <script>
+        function toggleNav () {
+            /* check if the nav is on */
+            if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                document.getElementById("navlinks").style.display = "none";
+            }
+            else {
+            document.getElementById("navlinks").style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="namenav">
         <div class="name"> <h1> 橪 · Physical Art </h1></div>
         <div>
             <nav class="nav1"> 
+                <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" id="hamburger" onclick="toggleNav();">
+                <div id="navlinks"> 
                 <a href="homepage.html" class="link" tabindex="5"> Home </a> <span>|</span> 
                 <a href="physicalart.html" class="link" tabindex="1"> Physical Art </a> <span>|</span>
                 <a href="photography.html" class="link" tabindex="2"> Photography </a> <span>|</span>
@@ -24,72 +52,72 @@
 <main>
     <div class="row3">
         <div class="text"> Every piece of art express its feeling. </div>
-        <div><img class="four" src="projectimages/charcoal_1.JPG" alt="charcoal_1"><br>
+        <div><img class="four" src="projectimages/charcoal_1.JPG" alt="home charcoal"><br>
             <p class="title"> charcoal 2020 </p>
         </div>
-        <div><img class="five" src="projectimages/color_6.jpeg" alt="color_6"><br>
+        <div><img class="five" src="projectimages/color_6.jpeg" alt="body colored pencil"><br>
             <p class="title"> colored pencil 2019 </p>
         </div>
-        <div><img class="six" src="projectimages/friend_5.jpeg" alt="friend_5"><br>
+        <div><img class="six" src="projectimages/friend_5.jpeg" alt="friend charcoal"><br>
             <p class="title"> charcoal 2018 </p>
         </div>
     </div>
 
     <div class="row3">
-        <div><img class="seven" src="projectimages/surreal_3.jpeg" alt="surreal_3"><br>
+        <div><img class="seven" src="projectimages/surreal_3.jpeg" alt="ShangHai Night acrylic"><br>
             <p class="title"> acrylic 2019 </p>
         </div>
-        <div><img class="eight" src="projectimages/surreal_1.jpg" alt="surreal_1"><br>
+        <div><img class="eight" src="projectimages/surreal_1.jpg" alt="Brooklyn Night charcoal"><br>
             <p class="title"> charcoal 2019 </p>
         </div>
-        <div><img class="nine" src="projectimages/purple_3.jpg" alt="purple_3"><br>
+        <div><img class="nine" src="projectimages/purple_3.jpg" alt="Purple Night oil"><br>
             <p class="title"> oil 2019 </p></div>
         <div class="text"> Bold. Surreal. Imaginative. </div>
     </div>
     
     <div class="row3">
-        <div><img class="ten" src="projectimages/purple_4.jpg" alt="purple_4"><br>
+        <div><img class="ten" src="projectimages/purple_4.jpg" alt="Ruin at the Old Summer Palace ballpoint pen"><br>
             <p class="title"> ballpoint pen 2019 </p>
         </div>
-        <div><img class="eleven" src="projectimages/einstein.jpeg" alt="einstein"><br>
+        <div><img class="eleven" src="projectimages/einstein.jpeg" alt="einstein colored pencil"><br>
             <p class="title"> colored pencil 2018 </p>
         </div>
-        <div><img class="twelve" src="projectimages/family.jpg" alt="family"><br>
+        <div><img class="twelve" src="projectimages/family.jpg" alt="Grandema and me pencil"><br>
             <p class="title"> pencil 2019 </p>
         </div>
     </div>
 
     <div class="row3">
         <div class="text"> I draw and paint my loved ones. </div>
-        <div><img class="thirteen" src="projectimages/surreal_2.jpg" alt="surreal_2"><br>
+        <div><img class="thirteen" src="projectimages/surreal_2.jpg" alt="New York colored pencil"><br>
             <p class="title"> colored pencil 2019 </p></div>
-        <div><img class="fourteen" src="projectimages/purple_2.jpg" alt="purple_2"><br>
+        <div><img class="fourteen" src="projectimages/purple_2.jpg" alt="woman of sorrow acrylic"><br>
             <p class="title"> acrylic 2019 </p>
         </div>
-        <div><img class="fifteen" src="projectimages/purple_1.jpg" alt="purple_1"><br>
+        <div><img class="fifteen" src="projectimages/purple_1.jpg" alt="tigers ballpoint pen"><br>
             <p class="title"> ballpoint pen 2018 </p>
         </div>
     </div>
 
     <div class="row3">
-        <div><img class="sixteen" src="projectimages/chalk2_3.jpg" alt="chalk2_3"><br>
+        <div><img class="sixteen" src="projectimages/chalk2_3.jpg" alt="Mona Lisa under Starry Night chalk"><br>
             <p class="title"> chalk 2018 </p>
         </div>
-        <div><img class="seventeen" src="projectimages/charcoal_2.JPG" alt="charcoal_2"><br>
+        <div><img class="seventeen" src="projectimages/charcoal_2.JPG" alt="lines and effects charcoal"><br>
             <p class="title"> charcoal 2020 </p>
         </div>
-        <div><img class="eighteen" src="projectimages/chalk3_1.JPG" alt="chalk3_1"><br>
+        <div><img class="eighteen" src="projectimages/chalk3_1.JPG" alt="self portrait water vs fire chalk"><br>
             <p class="title"> chalk 2019 </p></div>
     </div>
 
     <div class="row3">
-        <div><img class="nineteen" src="projectimages/color_2.jpeg" alt="color_2"><br>
+        <div><img class="nineteen" src="projectimages/color_2.jpeg" alt="gorgeous colored pencil"><br>
             <p class="title"> colored pencil 2019 </p>
         </div>
-        <div><img class="twenty" src="projectimages/acrylic_2.jpg" alt="acrylic_2"><br>
+        <div><img class="twenty" src="projectimages/acrylic_2.jpg" alt="summer creek oil"><br>
             <p class="title"> acrylic 2019 </p>
         </div>
-        <div><img class="twentyone" src="projectimages/acrylic_1.jpeg" alt="acrylic_1"><br>
+        <div><img class="twentyone" src="projectimages/acrylic_1.jpeg" alt="maze at the old summer palace acrylic"><br>
             <p class="title"> acrylic 2019 </p></div>
     </div>
 </main>

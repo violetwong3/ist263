@@ -6,6 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violet Wong</title>
     <link rel="stylesheet" href="styles.css"> 
+    <style>
+        #hamburgertwo {
+            width:40px;
+            display: none;
+        }
+        #navlinkstwo a {
+            padding: 10px;
+            margin: 5px;
+        }
+        @media only screen and (max-width:600px) {
+            #hamburgertwo {display: block;}
+            #navlinkstwo a {display: block;}
+            #navlinkstwo {display: none;}
+        }
+    </style>
+    <script>
+        function toggleNav () {
+            /* check if the nav is on */
+            if (document.getElementById("navlinkstwo").style.getPropertyValue("display") == 'block') {
+                document.getElementById("navlinkstwo").style.display = "none";
+            }
+            else {
+            document.getElementById("navlinkstwo").style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -13,6 +39,8 @@
         <div class="name"> <h1> 橪 · Photography </h1></div>
         <div>
             <nav class="nav1"> 
+                <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" id="hamburgertwo" onclick="toggleNav();">
+                <div id="navlinkstwo"> 
                 <a href="homepage.html" class="link" tabindex="5"> Home </a> <span>|</span> 
                 <a href="physicalart.html" class="link" tabindex="1"> Physical Art </a> <span>|</span>
                 <a href="photography.html" class="link" tabindex="2"> Photography </a> <span>|</span>
@@ -29,33 +57,33 @@
 <main>  
 <div class="photorow">
     <div class="col4">
-        <div><img class="photoone" src="projectimages/zp_3.JPG" alt="zp_3"></div>
-        <div><img class="photoone" src="projectimages/zp_5.JPG" alt="zp_5"></div>
-        <div><img class="photoone" src="projectimages/zp_6.JPG" alt="zp_6"></div>
-        <div><img class="photoone" src="projectimages/zp_2.JPG" alt="zp_2"></div>
+        <div><img class="photoone" src="projectimages/zp_3.JPG" alt="Night light"></div>
+        <div><img class="photoone" src="projectimages/zp_5.JPG" alt="movement"></div>
+        <div><img class="photoone" src="projectimages/zp_6.JPG" alt="running watercolor"></div>
+        <div><img class="photoone" src="projectimages/zp_2.JPG" alt="friend"></div>
     </div>
 
     <div class="col5">
-        <div><img class="phototwo" src="projectimages/zp_4.JPG" alt="zp_4"></div>
-        <div><img class="phototwo" src="projectimages/zp_9.jpg" alt="zp_9"></div>
-        <div><img class="phototwo" src="projectimages/zp_10(2).jpg" alt="zp_10(2)"></div>
-        <div><img class="phototwo" src="projectimages/zp_16.jpg" alt="zp_16"></div>
-        <div><img class="phototwo" src="projectimages/zp_27.jpg" alt="zp_27"></div>
+        <div><img class="phototwo" src="projectimages/zp_4.JPG" alt="light the smile"></div>
+        <div><img class="phototwo" src="projectimages/zp_9.jpg" alt="studio light and me"></div>
+        <div><img class="phototwo" src="projectimages/zp_10(2).jpg" alt="self portrait"></div>
+        <div><img class="phototwo" src="projectimages/zp_16.jpg" alt="architecture and me"></div>
+        <div><img class="phototwo" src="projectimages/zp_27.jpg" alt="couples"></div>
     </div>
 
     <div class="col6">
-        <div><img class="photothree" src="projectimages/zp_15.JPG" alt="zp_15"></div>
-        <div><img class="photothree" src="projectimages/zp_21.JPG" alt="zp_21"></div>
-        <div><img class="photothree" src="projectimages/zp_22.JPG" alt="zp_22(2)"></div>
-        <div><img class="photothree" src="projectimages/zp_23.JPG" alt="zp_23"></div>
-        <div><img class="photothree" src="projectimages/zp_19.JPG" alt="zp_19"></div>
+        <div><img class="photothree" src="projectimages/zp_15.JPG" alt="isolated"></div>
+        <div><img class="photothree" src="projectimages/zp_21.JPG" alt="staring at a mirror"></div>
+        <div><img class="photothree" src="projectimages/zp_22.JPG" alt="black"></div>
+        <div><img class="photothree" src="projectimages/zp_23.JPG" alt="red"></div>
+        <div><img class="photothree" src="projectimages/zp_19.JPG" alt="mom"></div>
     </div>
 </div>
 
 <div class="row7">
-    <div><img class="photofour" src="projectimages/zp_7.JPG" alt="zp_7"></div>
-    <div><img class="photofour" src="projectimages/zp_25.jpg" alt="zp_25"></div>
-    <div><img class="photofour" src="projectimages/zp_8.JPG" alt="zp_8"></div>
+    <div><img class="photofour" src="projectimages/zp_7.JPG" alt="empty"></div>
+    <div><img class="photofour" src="projectimages/zp_25.jpg" alt="beauty"></div>
+    <div><img class="photofour" src="projectimages/zp_8.JPG" alt="pressure"></div>
 </div>
 </main>   
 

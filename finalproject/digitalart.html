@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Violet Wong</title>
     <link rel="stylesheet" href="styles.css"> 
+    <style>
+        #hamburger {
+            width:40px;
+            display: none;
+        }
+        #navlinks a {
+            padding: 10px;
+            margin: 5px;
+        }
+        @media only screen and (max-width:600px) {
+            #hamburger {display: block;}
+            #navlinks a {display: block;}
+            #navlinks {display: none;}
+        }
+    </style>
+    <script>
+        function toggleNav () {
+            /* check if the nav is on */
+            if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                document.getElementById("navlinks").style.display = "none";
+            }
+            else {
+            document.getElementById("navlinks").style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="namenav">
         <div class="name"> <h1> 橪 · Digital Art </h1></div>
         <div>
             <nav class="nav1"> 
+                <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" id="hamburger" onclick="toggleNav();">
+                <div id="navlinks"> 
                 <a href="homepage.html" class="link" tabindex="5"> Home </a> <span>|</span> 
                 <a href="physicalart.html" class="link" tabindex="1"> Physical Art </a> <span>|</span>
                 <a href="photography.html" class="link" tabindex="2"> Photography </a> <span>|</span>
@@ -28,28 +56,28 @@
 <main> 
 <div class="digitalrow">
     <div class="col8">
-        <div><img class="digitalone" src="projectimages/digital(12).JPG" alt="digital_12"></div>
-        <div><img class="digitalone" src="projectimages/digital(6).jpg" alt="digital_6"></div>
-        <div><img class="digitalone" src="projectimages/digital(2).JPG" alt="digital_2"></div>
+        <div><img class="digitalone" src="projectimages/digital(12).JPG" alt="struggle"></div>
+        <div><img class="digitalone" src="projectimages/digital(6).jpg" alt="breath"></div>
+        <div><img class="digitalone" src="projectimages/digital(2).JPG" alt="active"></div>
 
     </div>
 
     <div class="col11">
-        <div><img class="digitalfour" src="projectimages/digital(14).JPG" alt="digital_14"></div>
-        <div><img class="digitalfour" src="projectimages/digital(13).JPG" alt="digital_13"></div>
-        <div><img class="digitalfour" src="projectimages/digital(5).JPG" alt="digital_5"></div>
+        <div><img class="digitalfour" src="projectimages/digital(14).JPG" alt="bloody red"></div>
+        <div><img class="digitalfour" src="projectimages/digital(13).JPG" alt="selfie"></div>
+        <div><img class="digitalfour" src="projectimages/digital(5).JPG" alt="Ariana Grande"></div>
     </div>
 
     <div class="col9">
-        <div><img class="digitaltwo" src="projectimages/digital(9).JPG" alt="digital_9"></div>
-        <div><img class="digitaltwo" src="projectimages/digital(1).jpg" alt="digital_1"></div>
-        <div class="text5" id="text"> ProCreate portraits </div>
+        <div><img class="digitaltwo" src="projectimages/digital(9).JPG" alt="deep feeling"></div>
+        <div><img class="digitaltwo" src="projectimages/digital(1).jpg" alt="halloween"></div>
+        <div class="text"> ProCreate portraits </div>
     </div>
 
     <div class="col10">
-        <div><img class="digitalthree" src="projectimages/digital(3).JPG" alt="digital_3"></div>
-        <div><img class="digitalthree" src="projectimages/digital(10).JPG" alt="digital_10"></div>
-        <div><img class="digitalthree" src="projectimages/digital(11).JPG" alt="digital_11"></div>
+        <div><img class="digitalthree" src="projectimages/digital(3).JPG" alt="floating"></div>
+        <div><img class="digitalthree" src="projectimages/digital(10).JPG" alt="quick sketch"></div>
+        <div><img class="digitalthree" src="projectimages/digital(11).JPG" alt="quick sketch two"></div>
     </div>
 </div>
 </main>
@@ -60,13 +88,12 @@
 
 <aside>
 <div class="row12">
-    <div><img class="digitalfive" src="projectimages/arc_5.jpg" alt="arc_5"></div>
-    <div><img class="digitalsix" src="projectimages/arc_20.jpg" alt="arc_20"></div>
-    <div><img class="digitalsix" src="projectimages/arc_19.jpg" alt="arc_19"></div>
-    <div><img class="digitalseven" src="projectimages/arc_6.jpg" alt="arc_6"></div>    
+    <div><img class="digitalfive" src="projectimages/arc_5.jpg" alt="lines and circles"></div>
+    <div><img class="digitalsix" src="projectimages/arc_20.jpg" alt="interior render"></div>
+    <div><img class="digitalsix" src="projectimages/arc_19.jpg" alt="exterior render"></div>
+    <div><img class="digitalseven" src="projectimages/arc_6.jpg" alt="topography"></div>    
 </div>
 </aside>
 
 </body>
 </html>
-

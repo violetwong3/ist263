@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="styles.css"> 
+    <style>
+        #hamburger {
+            width:40px;
+            display: none;
+        }
+        #navlinks a {
+            padding: 10px;
+            margin: 5px;
+        }
+        @media only screen and (max-width:600px) {
+            #hamburger {display: block;}
+            #navlinks a {display: block;}
+            #navlinks {display: none;}
+        }
+    </style>
+    <script>
+        function toggleNav () {
+            /* check if the nav is on */
+            if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                document.getElementById("navlinks").style.display = "none";
+            }
+            else {
+            document.getElementById("navlinks").style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="namenav">
         <div class="name"> <h1> Contact · 橪</h1></div>
         <div>
             <nav class="nav1"> 
+                <img src="https://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon" id="hamburger" onclick="toggleNav();">
+                <div id="navlinks"> 
                 <a href="homepage.html" class="link" tabindex="5"> Home </a> <span>|</span> 
                 <a href="physicalart.html" class="link" tabindex="1"> Physical Art </a> <span>|</span>
                 <a href="photography.html" class="link" tabindex="2"> Photography </a> <span>|</span>
@@ -23,8 +51,8 @@
 <div class="contactrow"> 
 <aside>
     <div> 
-        <img class="contactone" src="projectimages/chalk1_2.jpg" alt="chalk1_2"><br>
-        <p id="title"> chalk 2018 </p>
+        <img class="contactone" src="projectimages/chalk1_2.jpg" alt="chalk drawing tiger"><br>
+        <p class="title"> chalk 2018 </p>
     </div>
 </aside>
 
@@ -54,6 +82,12 @@
     </div>
 </main>
 </div>
+
+<footer> 
+    <hr> 
+    <span> &copy; 2022 </span>
+</footer>
+
 
 </body>
 </html>

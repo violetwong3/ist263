@@ -25,6 +25,14 @@ font-weight: 200%;
     span {  display: none;}
 } 
 
+@media only screen and (max-width: 800px)
+{
+    nav a {display: block;
+width: 100%;
+padding:10px;}
+span {display: none;}
+}
+
 .link {
     color:#ffffff;
 }
